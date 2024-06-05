@@ -8,10 +8,27 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        black: "#091011",
+        teal: {
+          500: "#2FE4AB",
+          400: "#82EDCC",
+        },
+        gray: {
+          100: "#D9EEF3",
+          300: "#9CC2C9",
+          600: "#111F22",
+          700: "#475E64",
+          800: "#182D32",
+          900: "#243D42",
+        },
+      },
+      fontSize: {
+        "2xl": ["28px", "24px"],
+        "3xl": ["32px", "48px"],
+      },
+      gridTemplateColumns: {
+        card: "repeat(auto-fill, minmax(395px, 1fr))",
       },
     },
   },
